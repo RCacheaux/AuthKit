@@ -1,22 +1,14 @@
-//
-//  AKAppDelegate.m
-//  AuthKit
-//
-//  Created by Rene S Cacheaux on 2/26/13.
-//  Copyright (c) 2013 Mutual Mobile. All rights reserved.
-//
-
 #import "AKAppDelegate.h"
 
 #import "AKViewController.h"
 
 @implementation AKAppDelegate
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
+- (BOOL)application:(UIApplication *)application
+    didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.viewController = [[AKViewController alloc] initWithNibName:@"AKViewController" bundle:nil];
+    self.viewController = [[AKViewController alloc] init];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;
