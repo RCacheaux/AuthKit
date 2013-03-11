@@ -1,6 +1,7 @@
 #import "AKAppDelegate.h"
 
 #import "AKViewController.h"
+#import "AKLoginViewController.h"
 
 @implementation AKAppDelegate
 
@@ -8,7 +9,7 @@
     didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.viewController = [[AKViewController alloc] init];
+    self.viewController = [[AKLoginViewController alloc] init];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;
