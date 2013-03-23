@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8808720916FE614700D09848 /* AKAccountsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8808720816FE614700D09848 /* AKAccountsTests.m */; };
 		9F78C43516DD576E00605174 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F78C43416DD576E00605174 /* UIKit.framework */; };
 		9F78C43716DD576E00605174 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F78C43616DD576E00605174 /* Foundation.framework */; };
 		9F78C43916DD576E00605174 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F78C43816DD576E00605174 /* CoreGraphics.framework */; };
@@ -21,8 +22,6 @@
 		9F78C45A16DD576E00605174 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F78C43416DD576E00605174 /* UIKit.framework */; };
 		9F78C45B16DD576E00605174 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F78C43616DD576E00605174 /* Foundation.framework */; };
 		9F78C46316DD576E00605174 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9F78C46116DD576E00605174 /* InfoPlist.strings */; };
-		9F78C46616DD576E00605174 /* AuthKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F78C46516DD576E00605174 /* AuthKitTests.m */; };
-		9FB16FC816EE8DE700676FC8 /* AKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB16FC716EE8DE700676FC8 /* AKLoginViewController.m */; };
 		DAA6AC8FC77648F78D77E14A /* libPods-AuthKitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A682FE0F5A7741F8830220F7 /* libPods-AuthKitTests.a */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		180B5BDE35EB401894D758FF /* Pods-AuthKitTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthKitTests.xcconfig"; path = "Pods/Pods-AuthKitTests.xcconfig"; sourceTree = SOURCE_ROOT; };
+		8808720816FE614700D09848 /* AKAccountsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKAccountsTests.m; sourceTree = "<group>"; };
 		9F78C43116DD576E00605174 /* AuthKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuthKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F78C43416DD576E00605174 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9F78C43616DD576E00605174 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -57,10 +57,6 @@
 		9F78C45816DD576E00605174 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		9F78C46016DD576E00605174 /* AuthKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AuthKitTests-Info.plist"; sourceTree = "<group>"; };
 		9F78C46216DD576E00605174 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		9F78C46416DD576E00605174 /* AuthKitTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthKitTests.h; sourceTree = "<group>"; };
-		9F78C46516DD576E00605174 /* AuthKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuthKitTests.m; sourceTree = "<group>"; };
-		9FB16FC616EE8DE700676FC8 /* AKLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKLoginViewController.h; sourceTree = "<group>"; };
-		9FB16FC716EE8DE700676FC8 /* AKLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKLoginViewController.m; sourceTree = "<group>"; };
 		A682FE0F5A7741F8830220F7 /* libPods-AuthKitTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AuthKitTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -89,6 +85,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8808720216FE60FC00D09848 /* Accounts */ = {
+			isa = PBXGroup;
+			children = (
+				8808720416FE60FC00D09848 /* Source */,
+				8808720316FE60FC00D09848 /* Resources */,
+			);
+			path = Accounts;
+			sourceTree = "<group>";
+		};
+		8808720316FE60FC00D09848 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8808720416FE60FC00D09848 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				8808720516FE60FC00D09848 /* Classes */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		8808720516FE60FC00D09848 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8808720616FE612600D09848 /* Accounts */ = {
+			isa = PBXGroup;
+			children = (
+				8808720816FE614700D09848 /* AKAccountsTests.m */,
+			);
+			path = Accounts;
+			sourceTree = "<group>";
+		};
 		9F78C42816DD576E00605174 = {
 			isa = PBXGroup;
 			children = (
@@ -124,7 +159,7 @@
 		9F78C43A16DD576E00605174 /* AuthKit */ = {
 			isa = PBXGroup;
 			children = (
-				9FB16FC316EE8DAB00676FC8 /* Source */,
+				8808720216FE60FC00D09848 /* Accounts */,
 				9F78C44316DD576E00605174 /* AKAppDelegate.h */,
 				9F78C44416DD576E00605174 /* AKAppDelegate.m */,
 				9F78C44C16DD576E00605174 /* AKViewController.h */,
@@ -151,8 +186,7 @@
 		9F78C45E16DD576E00605174 /* AuthKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				9F78C46416DD576E00605174 /* AuthKitTests.h */,
-				9F78C46516DD576E00605174 /* AuthKitTests.m */,
+				8808720616FE612600D09848 /* Accounts */,
 				9F78C45F16DD576E00605174 /* Supporting Files */,
 			);
 			path = AuthKitTests;
@@ -165,31 +199,6 @@
 				9F78C46116DD576E00605174 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		9FB16FC316EE8DAB00676FC8 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				9FB16FC416EE8DAB00676FC8 /* Classes */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
-		9FB16FC416EE8DAB00676FC8 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				9FB16FC516EE8DCD00676FC8 /* UI */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		9FB16FC516EE8DCD00676FC8 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				9FB16FC616EE8DE700676FC8 /* AKLoginViewController.h */,
-				9FB16FC716EE8DE700676FC8 /* AKLoginViewController.m */,
-			);
-			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,7 +329,6 @@
 				9F78C44116DD576E00605174 /* main.m in Sources */,
 				9F78C44516DD576E00605174 /* AKAppDelegate.m in Sources */,
 				9F78C44E16DD576E00605174 /* AKViewController.m in Sources */,
-				9FB16FC816EE8DE700676FC8 /* AKLoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,7 +336,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F78C46616DD576E00605174 /* AuthKitTests.m in Sources */,
+				8808720916FE614700D09848 /* AKAccountsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
