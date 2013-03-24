@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		8808720916FE614700D09848 /* AKAccountsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8808720816FE614700D09848 /* AKAccountsTests.m */; };
+		8808720C16FE627000D09848 /* AKAccountStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 8808720B16FE627000D09848 /* AKAccountStore.m */; };
+		8808720F16FE631B00D09848 /* AKAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 8808720E16FE631B00D09848 /* AKAccount.m */; };
+		8808721316FE747300D09848 /* AKAccountType.m in Sources */ = {isa = PBXBuildFile; fileRef = 8808721216FE747300D09848 /* AKAccountType.m */; };
 		9F78C43516DD576E00605174 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F78C43416DD576E00605174 /* UIKit.framework */; };
 		9F78C43716DD576E00605174 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F78C43616DD576E00605174 /* Foundation.framework */; };
 		9F78C43916DD576E00605174 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F78C43816DD576E00605174 /* CoreGraphics.framework */; };
@@ -38,6 +41,13 @@
 /* Begin PBXFileReference section */
 		180B5BDE35EB401894D758FF /* Pods-AuthKitTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthKitTests.xcconfig"; path = "Pods/Pods-AuthKitTests.xcconfig"; sourceTree = SOURCE_ROOT; };
 		8808720816FE614700D09848 /* AKAccountsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKAccountsTests.m; sourceTree = "<group>"; };
+		8808720A16FE627000D09848 /* AKAccountStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKAccountStore.h; sourceTree = "<group>"; };
+		8808720B16FE627000D09848 /* AKAccountStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKAccountStore.m; sourceTree = "<group>"; };
+		8808720D16FE631B00D09848 /* AKAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKAccount.h; sourceTree = "<group>"; };
+		8808720E16FE631B00D09848 /* AKAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKAccount.m; sourceTree = "<group>"; };
+		8808721016FE6F5B00D09848 /* AKAccount_Protected.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKAccount_Protected.h; sourceTree = "<group>"; };
+		8808721116FE747200D09848 /* AKAccountType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKAccountType.h; sourceTree = "<group>"; };
+		8808721216FE747300D09848 /* AKAccountType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKAccountType.m; sourceTree = "<group>"; };
 		9F78C43116DD576E00605174 /* AuthKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuthKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F78C43416DD576E00605174 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9F78C43616DD576E00605174 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -112,6 +122,13 @@
 		8808720516FE60FC00D09848 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				8808720A16FE627000D09848 /* AKAccountStore.h */,
+				8808720B16FE627000D09848 /* AKAccountStore.m */,
+				8808720D16FE631B00D09848 /* AKAccount.h */,
+				8808720E16FE631B00D09848 /* AKAccount.m */,
+				8808721016FE6F5B00D09848 /* AKAccount_Protected.h */,
+				8808721116FE747200D09848 /* AKAccountType.h */,
+				8808721216FE747300D09848 /* AKAccountType.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -329,6 +346,9 @@
 				9F78C44116DD576E00605174 /* main.m in Sources */,
 				9F78C44516DD576E00605174 /* AKAppDelegate.m in Sources */,
 				9F78C44E16DD576E00605174 /* AKViewController.m in Sources */,
+				8808720C16FE627000D09848 /* AKAccountStore.m in Sources */,
+				8808720F16FE631B00D09848 /* AKAccount.m in Sources */,
+				8808721316FE747300D09848 /* AKAccountType.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
