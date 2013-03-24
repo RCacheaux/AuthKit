@@ -8,18 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		8808720916FE614700D09848 /* AKAccountsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8808720816FE614700D09848 /* AKAccountsTests.m */; };
-		8808720C16FE627000D09848 /* AKAccountStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 8808720B16FE627000D09848 /* AKAccountStore.m */; };
-		8808720F16FE631B00D09848 /* AKAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 8808720E16FE631B00D09848 /* AKAccount.m */; };
-		8808721316FE747300D09848 /* AKAccountType.m in Sources */ = {isa = PBXBuildFile; fileRef = 8808721216FE747300D09848 /* AKAccountType.m */; };
 		8808722016FF34B000D09848 /* AKDataPartitionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8808721F16FF34B000D09848 /* AKDataPartitionsTests.m */; };
-		8808722316FF38DD00D09848 /* AKDataPartitions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8808722216FF38DD00D09848 /* AKDataPartitions.m */; };
 		8808722516FF3A9B00D09848 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8808722416FF3A9B00D09848 /* CoreData.framework */; };
 		8808722616FF3AB600D09848 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8808722416FF3A9B00D09848 /* CoreData.framework */; };
 		8808722C16FF949400D09848 /* AKAuthControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8808722B16FF949400D09848 /* AKAuthControllerTests.m */; };
 		8808722F16FF977300D09848 /* AKFakeAuthController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8808722E16FF977300D09848 /* AKFakeAuthController.m */; };
 		8808723316FF9AC600D09848 /* AKAuthMasterAccountViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8808723216FF9AC600D09848 /* AKAuthMasterAccountViewControllerTests.m */; };
-		8808723616FF9B3400D09848 /* AKAuthMasterAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8808723516FF9B3400D09848 /* AKAuthMasterAccountViewController.m */; };
-		8808723E16FFB7D600D09848 /* AKAuthController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8808723D16FFB7D600D09848 /* AKAuthController.m */; };
+		8808725416FFC43D00D09848 /* AKAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 8808724316FFC43D00D09848 /* AKAccount.m */; };
+		8808725516FFC43D00D09848 /* AKAccountStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 8808724616FFC43D00D09848 /* AKAccountStore.m */; };
+		8808725616FFC43D00D09848 /* AKAccountType.m in Sources */ = {isa = PBXBuildFile; fileRef = 8808724816FFC43D00D09848 /* AKAccountType.m */; };
+		8808725716FFC43D00D09848 /* AKAuthController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8808724C16FFC43D00D09848 /* AKAuthController.m */; };
+		8808725816FFC43D00D09848 /* AKAuthMasterAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8808725016FFC43D00D09848 /* AKAuthMasterAccountViewController.m */; };
+		8808725916FFC43D00D09848 /* AKDataPartitions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8808725316FFC43D00D09848 /* AKDataPartitions.m */; };
 		9F78C43516DD576E00605174 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F78C43416DD576E00605174 /* UIKit.framework */; };
 		9F78C43716DD576E00605174 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F78C43616DD576E00605174 /* Foundation.framework */; };
 		9F78C43916DD576E00605174 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F78C43816DD576E00605174 /* CoreGraphics.framework */; };
@@ -50,27 +50,27 @@
 /* Begin PBXFileReference section */
 		180B5BDE35EB401894D758FF /* Pods-AuthKitTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthKitTests.xcconfig"; path = "Pods/Pods-AuthKitTests.xcconfig"; sourceTree = SOURCE_ROOT; };
 		8808720816FE614700D09848 /* AKAccountsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKAccountsTests.m; sourceTree = "<group>"; };
-		8808720A16FE627000D09848 /* AKAccountStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKAccountStore.h; sourceTree = "<group>"; };
-		8808720B16FE627000D09848 /* AKAccountStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKAccountStore.m; sourceTree = "<group>"; };
-		8808720D16FE631B00D09848 /* AKAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKAccount.h; sourceTree = "<group>"; };
-		8808720E16FE631B00D09848 /* AKAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKAccount.m; sourceTree = "<group>"; };
-		8808721016FE6F5B00D09848 /* AKAccount_Protected.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKAccount_Protected.h; sourceTree = "<group>"; };
-		8808721116FE747200D09848 /* AKAccountType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKAccountType.h; sourceTree = "<group>"; };
-		8808721216FE747300D09848 /* AKAccountType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKAccountType.m; sourceTree = "<group>"; };
 		8808721F16FF34B000D09848 /* AKDataPartitionsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKDataPartitionsTests.m; sourceTree = "<group>"; };
-		8808722116FF38DD00D09848 /* AKDataPartitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKDataPartitions.h; sourceTree = "<group>"; };
-		8808722216FF38DD00D09848 /* AKDataPartitions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKDataPartitions.m; sourceTree = "<group>"; };
 		8808722416FF3A9B00D09848 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		8808722716FF86F600D09848 /* AKAuthControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKAuthControl.h; sourceTree = "<group>"; };
-		8808722816FF8C2500D09848 /* AKAuthHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKAuthHandler.h; sourceTree = "<group>"; };
 		8808722B16FF949400D09848 /* AKAuthControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKAuthControllerTests.m; sourceTree = "<group>"; };
 		8808722D16FF977300D09848 /* AKFakeAuthController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKFakeAuthController.h; sourceTree = "<group>"; };
 		8808722E16FF977300D09848 /* AKFakeAuthController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKFakeAuthController.m; sourceTree = "<group>"; };
 		8808723216FF9AC600D09848 /* AKAuthMasterAccountViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKAuthMasterAccountViewControllerTests.m; sourceTree = "<group>"; };
-		8808723416FF9B3400D09848 /* AKAuthMasterAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKAuthMasterAccountViewController.h; sourceTree = "<group>"; };
-		8808723516FF9B3400D09848 /* AKAuthMasterAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKAuthMasterAccountViewController.m; sourceTree = "<group>"; };
-		8808723C16FFB7D600D09848 /* AKAuthController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKAuthController.h; sourceTree = "<group>"; };
-		8808723D16FFB7D600D09848 /* AKAuthController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKAuthController.m; sourceTree = "<group>"; };
+		8808724216FFC43D00D09848 /* AKAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKAccount.h; sourceTree = "<group>"; };
+		8808724316FFC43D00D09848 /* AKAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKAccount.m; sourceTree = "<group>"; };
+		8808724416FFC43D00D09848 /* AKAccount_Protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKAccount_Protected.h; sourceTree = "<group>"; };
+		8808724516FFC43D00D09848 /* AKAccountStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKAccountStore.h; sourceTree = "<group>"; };
+		8808724616FFC43D00D09848 /* AKAccountStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKAccountStore.m; sourceTree = "<group>"; };
+		8808724716FFC43D00D09848 /* AKAccountType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKAccountType.h; sourceTree = "<group>"; };
+		8808724816FFC43D00D09848 /* AKAccountType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKAccountType.m; sourceTree = "<group>"; };
+		8808724A16FFC43D00D09848 /* AKAuthControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKAuthControl.h; sourceTree = "<group>"; };
+		8808724B16FFC43D00D09848 /* AKAuthController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKAuthController.h; sourceTree = "<group>"; };
+		8808724C16FFC43D00D09848 /* AKAuthController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKAuthController.m; sourceTree = "<group>"; };
+		8808724D16FFC43D00D09848 /* AKAuthHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKAuthHandler.h; sourceTree = "<group>"; };
+		8808724F16FFC43D00D09848 /* AKAuthMasterAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKAuthMasterAccountViewController.h; sourceTree = "<group>"; };
+		8808725016FFC43D00D09848 /* AKAuthMasterAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKAuthMasterAccountViewController.m; sourceTree = "<group>"; };
+		8808725216FFC43D00D09848 /* AKDataPartitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKDataPartitions.h; sourceTree = "<group>"; };
+		8808725316FFC43D00D09848 /* AKDataPartitions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKDataPartitions.m; sourceTree = "<group>"; };
 		9F78C43116DD576E00605174 /* AuthKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuthKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F78C43416DD576E00605174 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9F78C43616DD576E00605174 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -120,127 +120,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8808720216FE60FC00D09848 /* Accounts */ = {
-			isa = PBXGroup;
-			children = (
-				8808720416FE60FC00D09848 /* Source */,
-				8808720316FE60FC00D09848 /* Resources */,
-			);
-			path = Accounts;
-			sourceTree = "<group>";
-		};
-		8808720316FE60FC00D09848 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		8808720416FE60FC00D09848 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				8808720516FE60FC00D09848 /* Classes */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
-		8808720516FE60FC00D09848 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				8808720A16FE627000D09848 /* AKAccountStore.h */,
-				8808720B16FE627000D09848 /* AKAccountStore.m */,
-				8808720D16FE631B00D09848 /* AKAccount.h */,
-				8808720E16FE631B00D09848 /* AKAccount.m */,
-				8808721016FE6F5B00D09848 /* AKAccount_Protected.h */,
-				8808721116FE747200D09848 /* AKAccountType.h */,
-				8808721216FE747300D09848 /* AKAccountType.m */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		8808720616FE612600D09848 /* Accounts */ = {
 			isa = PBXGroup;
 			children = (
 				8808720816FE614700D09848 /* AKAccountsTests.m */,
 			);
 			path = Accounts;
-			sourceTree = "<group>";
-		};
-		8808721416FE94E000D09848 /* DataPartitions */ = {
-			isa = PBXGroup;
-			children = (
-				8808721516FE94E000D09848 /* Source */,
-			);
-			path = DataPartitions;
-			sourceTree = "<group>";
-		};
-		8808721516FE94E000D09848 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				8808721616FE94E000D09848 /* Classes */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
-		8808721616FE94E000D09848 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				8808722116FF38DD00D09848 /* AKDataPartitions.h */,
-				8808722216FF38DD00D09848 /* AKDataPartitions.m */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		8808721716FE955700D09848 /* Authentication */ = {
-			isa = PBXGroup;
-			children = (
-				8808721816FE955700D09848 /* Source */,
-			);
-			path = Authentication;
-			sourceTree = "<group>";
-		};
-		8808721816FE955700D09848 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				8808721916FE955700D09848 /* Classes */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
-		8808721916FE955700D09848 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				8808722716FF86F600D09848 /* AKAuthControl.h */,
-				8808722816FF8C2500D09848 /* AKAuthHandler.h */,
-				8808723C16FFB7D600D09848 /* AKAuthController.h */,
-				8808723D16FFB7D600D09848 /* AKAuthController.m */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		8808721A16FE95DF00D09848 /* AuthUI */ = {
-			isa = PBXGroup;
-			children = (
-				8808721B16FE95DF00D09848 /* Source */,
-			);
-			path = AuthUI;
-			sourceTree = "<group>";
-		};
-		8808721B16FE95DF00D09848 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				8808721C16FE95DF00D09848 /* Classes */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
-		8808721C16FE95DF00D09848 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				8808723416FF9B3400D09848 /* AKAuthMasterAccountViewController.h */,
-				8808723516FF9B3400D09848 /* AKAuthMasterAccountViewController.m */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		8808721D16FF349600D09848 /* DataPartitions */ = {
@@ -267,6 +152,68 @@
 				8808723216FF9AC600D09848 /* AKAuthMasterAccountViewControllerTests.m */,
 			);
 			path = AuthUI;
+			sourceTree = "<group>";
+		};
+		8808723F16FFC43D00D09848 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				8808724016FFC43D00D09848 /* Classes */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		8808724016FFC43D00D09848 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8808724116FFC43D00D09848 /* Accounts */,
+				8808724916FFC43D00D09848 /* AuthController */,
+				8808724E16FFC43D00D09848 /* AuthUI */,
+				8808725116FFC43D00D09848 /* DataPartitions */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8808724116FFC43D00D09848 /* Accounts */ = {
+			isa = PBXGroup;
+			children = (
+				8808724216FFC43D00D09848 /* AKAccount.h */,
+				8808724316FFC43D00D09848 /* AKAccount.m */,
+				8808724416FFC43D00D09848 /* AKAccount_Protected.h */,
+				8808724516FFC43D00D09848 /* AKAccountStore.h */,
+				8808724616FFC43D00D09848 /* AKAccountStore.m */,
+				8808724716FFC43D00D09848 /* AKAccountType.h */,
+				8808724816FFC43D00D09848 /* AKAccountType.m */,
+			);
+			path = Accounts;
+			sourceTree = "<group>";
+		};
+		8808724916FFC43D00D09848 /* AuthController */ = {
+			isa = PBXGroup;
+			children = (
+				8808724A16FFC43D00D09848 /* AKAuthControl.h */,
+				8808724B16FFC43D00D09848 /* AKAuthController.h */,
+				8808724C16FFC43D00D09848 /* AKAuthController.m */,
+				8808724D16FFC43D00D09848 /* AKAuthHandler.h */,
+			);
+			path = AuthController;
+			sourceTree = "<group>";
+		};
+		8808724E16FFC43D00D09848 /* AuthUI */ = {
+			isa = PBXGroup;
+			children = (
+				8808724F16FFC43D00D09848 /* AKAuthMasterAccountViewController.h */,
+				8808725016FFC43D00D09848 /* AKAuthMasterAccountViewController.m */,
+			);
+			path = AuthUI;
+			sourceTree = "<group>";
+		};
+		8808725116FFC43D00D09848 /* DataPartitions */ = {
+			isa = PBXGroup;
+			children = (
+				8808725216FFC43D00D09848 /* AKDataPartitions.h */,
+				8808725316FFC43D00D09848 /* AKDataPartitions.m */,
+			);
+			path = DataPartitions;
 			sourceTree = "<group>";
 		};
 		9F78C42816DD576E00605174 = {
@@ -305,10 +252,7 @@
 		9F78C43A16DD576E00605174 /* AuthKit */ = {
 			isa = PBXGroup;
 			children = (
-				8808721716FE955700D09848 /* Authentication */,
-				8808721A16FE95DF00D09848 /* AuthUI */,
-				8808720216FE60FC00D09848 /* Accounts */,
-				8808721416FE94E000D09848 /* DataPartitions */,
+				8808723F16FFC43D00D09848 /* Source */,
 				9F78C44316DD576E00605174 /* AKAppDelegate.h */,
 				9F78C44416DD576E00605174 /* AKAppDelegate.m */,
 				9F78C44C16DD576E00605174 /* AKViewController.h */,
@@ -481,12 +425,12 @@
 				9F78C44116DD576E00605174 /* main.m in Sources */,
 				9F78C44516DD576E00605174 /* AKAppDelegate.m in Sources */,
 				9F78C44E16DD576E00605174 /* AKViewController.m in Sources */,
-				8808720C16FE627000D09848 /* AKAccountStore.m in Sources */,
-				8808720F16FE631B00D09848 /* AKAccount.m in Sources */,
-				8808721316FE747300D09848 /* AKAccountType.m in Sources */,
-				8808722316FF38DD00D09848 /* AKDataPartitions.m in Sources */,
-				8808723616FF9B3400D09848 /* AKAuthMasterAccountViewController.m in Sources */,
-				8808723E16FFB7D600D09848 /* AKAuthController.m in Sources */,
+				8808725416FFC43D00D09848 /* AKAccount.m in Sources */,
+				8808725516FFC43D00D09848 /* AKAccountStore.m in Sources */,
+				8808725616FFC43D00D09848 /* AKAccountType.m in Sources */,
+				8808725716FFC43D00D09848 /* AKAuthController.m in Sources */,
+				8808725816FFC43D00D09848 /* AKAuthMasterAccountViewController.m in Sources */,
+				8808725916FFC43D00D09848 /* AKDataPartitions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

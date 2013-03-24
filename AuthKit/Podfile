@@ -3,3 +3,5 @@ platform :ios, '6.1'
 target :AuthKitTests, :exclusive => true do
   pod 'OCMock', '>= 2.0.1'
 end
+
+podspec :podspec => "../AuthKit.podspec"
