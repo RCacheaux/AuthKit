@@ -38,7 +38,7 @@ NSString * const AKDataPartitionStoreURLKey = @"AKDataPartitionPersistentStoreUR
                                                              options:nil
                                                                error:&error];
   if (!store || error) {
-    // TODO(rcacheaux): Handle error.]
+    // TODO(rcacheaux): Handle error.
     return nil;
   }
   
