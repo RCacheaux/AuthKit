@@ -16,8 +16,11 @@
   self = [super init];
   if (self) {
     _identifier = identifier;
+    _userInfo = [NSMutableDictionary dictionary];
   }
   return self;
 }
+
+// TODO(rcacheaux): Invalidate default initializer.
 
 @end
