@@ -8,6 +8,7 @@
 // TODO(rcacheaux): Docs.
 @protocol AKAuthHandler
 
+// TODO(rcacheaux): Rename to avoid naming collision.
 - (void)presentViewController:(UIViewController *)viewController;
 - (void)authControllerAccount:(AKAccount *)account
               didAuthenticate:(id<AKAuthControl>)authController;

@@ -8,6 +8,8 @@
 @interface AKAuthMasterAccountViewController :
     UIViewController<AKAuthHandler, AKAuthControl>
 
+@property(nonatomic, strong, readonly) id<AKAuthControl> masterAccountAuthController;
+
 + (instancetype)
     masterAccountViewControllerWithAuthController:(id<AKAuthControl>)authController;
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil

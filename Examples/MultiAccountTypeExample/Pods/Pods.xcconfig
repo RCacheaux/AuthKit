@@ -1,0 +1,7 @@
+ALWAYS_SEARCH_USER_PATHS = YES
+HEADER_SEARCH_PATHS = ${PODS_HEADERS_SEARCH_PATHS}
+OTHER_LDFLAGS = -ObjC -framework Security -framework SystemConfiguration
+PODS_BUILD_HEADERS_SEARCH_PATHS = "${PODS_ROOT}/BuildHeaders" "${PODS_ROOT}/BuildHeaders/AuthKit" "${PODS_ROOT}/BuildHeaders/GTMHTTPFetcher" "${PODS_ROOT}/BuildHeaders/gtm-oauth2"
+PODS_HEADERS_SEARCH_PATHS = ${PODS_PUBLIC_HEADERS_SEARCH_PATHS}
+PODS_PUBLIC_HEADERS_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/AuthKit" "${PODS_ROOT}/Headers/GTMHTTPFetcher" "${PODS_ROOT}/Headers/gtm-oauth2"
+PODS_ROOT = ${SRCROOT}/Pods

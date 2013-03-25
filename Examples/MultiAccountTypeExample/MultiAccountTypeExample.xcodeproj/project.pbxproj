@@ -20,13 +20,14 @@
 		880872BE16FFCA8100D09848 /* MultiAccountTypeExample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 880872BC16FFCA8100D09848 /* MultiAccountTypeExample.xcdatamodeld */; };
 		880872C016FFCABC00D09848 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 880872BF16FFCABC00D09848 /* main.m */; };
 		880872C616FFCC6900D09848 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 880872C316FFCC6900D09848 /* InfoPlist.strings */; };
-		880872C716FFCC6900D09848 /* MultiAccountTypeExampleTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 880872C516FFCC6900D09848 /* MultiAccountTypeExampleTests-Info.plist */; };
-		880872C916FFCC7A00D09848 /* MultiAccountTypeExample-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 880872C816FFCC7A00D09848 /* MultiAccountTypeExample-Info.plist */; };
 		880872CE16FFCCD000D09848 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 880872CB16FFCCD000D09848 /* Default-568h@2x.png */; };
 		880872CF16FFCCD000D09848 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 880872CC16FFCCD000D09848 /* Default.png */; };
 		880872D016FFCCD000D09848 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 880872CD16FFCCD000D09848 /* Default@2x.png */; };
 		880872D416FFCCD700D09848 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 880872D216FFCCD700D09848 /* InfoPlist.strings */; };
-		880872D716FFCD3A00D09848 /* MAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 880872D616FFCD3A00D09848 /* MAViewController.m */; };
+		880872DA16FFDCB900D09848 /* MAGoogleAuthController.m in Sources */ = {isa = PBXBuildFile; fileRef = 880872D916FFDCB900D09848 /* MAGoogleAuthController.m */; };
+		880872DD16FFE05C00D09848 /* MAApplicationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 880872DC16FFE05B00D09848 /* MAApplicationViewController.m */; };
+		880872E016FFE0FC00D09848 /* MATourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 880872DF16FFE0FB00D09848 /* MATourViewController.m */; };
+		9E58DA3EB1E94EB2ACAA741D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E88340C6DFEA4AB7A8B8D4F7 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,8 +62,14 @@
 		880872CC16FFCCD000D09848 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		880872CD16FFCCD000D09848 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		880872D316FFCCD700D09848 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		880872D516FFCD3A00D09848 /* MAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAViewController.h; sourceTree = "<group>"; };
-		880872D616FFCD3A00D09848 /* MAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAViewController.m; sourceTree = "<group>"; };
+		880872D816FFDCB900D09848 /* MAGoogleAuthController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAGoogleAuthController.h; sourceTree = "<group>"; };
+		880872D916FFDCB900D09848 /* MAGoogleAuthController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAGoogleAuthController.m; sourceTree = "<group>"; };
+		880872DB16FFE05B00D09848 /* MAApplicationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAApplicationViewController.h; sourceTree = "<group>"; };
+		880872DC16FFE05B00D09848 /* MAApplicationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAApplicationViewController.m; sourceTree = "<group>"; };
+		880872DE16FFE0FB00D09848 /* MATourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MATourViewController.h; sourceTree = "<group>"; };
+		880872DF16FFE0FB00D09848 /* MATourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MATourViewController.m; sourceTree = "<group>"; };
+		8CD359962D5F451C94C6C5A2 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		E88340C6DFEA4AB7A8B8D4F7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +81,7 @@
 				8808726916FFC90A00D09848 /* Foundation.framework in Frameworks */,
 				8808726B16FFC90A00D09848 /* CoreGraphics.framework in Frameworks */,
 				8808726D16FFC90A00D09848 /* CoreData.framework in Frameworks */,
+				9E58DA3EB1E94EB2ACAA741D /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +106,7 @@
 				8808729C16FFC90A00D09848 /* MultiAccountTypeExampleTests */,
 				8808726516FFC90A00D09848 /* Frameworks */,
 				8808726416FFC90A00D09848 /* Products */,
+				8CD359962D5F451C94C6C5A2 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,6 +127,7 @@
 				8808726A16FFC90A00D09848 /* CoreGraphics.framework */,
 				8808726C16FFC90A00D09848 /* CoreData.framework */,
 				8808729516FFC90A00D09848 /* SenTestingKit.framework */,
+				E88340C6DFEA4AB7A8B8D4F7 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -167,6 +177,8 @@
 		880872AF16FFCA1200D09848 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				880872D816FFDCB900D09848 /* MAGoogleAuthController.h */,
+				880872D916FFDCB900D09848 /* MAGoogleAuthController.m */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -174,8 +186,10 @@
 		880872B216FFCA1200D09848 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				880872D516FFCD3A00D09848 /* MAViewController.h */,
-				880872D616FFCD3A00D09848 /* MAViewController.m */,
+				880872DB16FFE05B00D09848 /* MAApplicationViewController.h */,
+				880872DC16FFE05B00D09848 /* MAApplicationViewController.m */,
+				880872DE16FFE0FB00D09848 /* MATourViewController.h */,
+				880872DF16FFE0FB00D09848 /* MATourViewController.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -234,6 +248,7 @@
 				8808725F16FFC90A00D09848 /* Sources */,
 				8808726016FFC90A00D09848 /* Frameworks */,
 				8808726116FFC90A00D09848 /* Resources */,
+				38C8357266BB451E85E7654B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -296,7 +311,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				880872C916FFCC7A00D09848 /* MultiAccountTypeExample-Info.plist in Resources */,
 				880872CE16FFCCD000D09848 /* Default-568h@2x.png in Resources */,
 				880872CF16FFCCD000D09848 /* Default.png in Resources */,
 				880872D016FFCCD000D09848 /* Default@2x.png in Resources */,
@@ -309,13 +323,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				880872C616FFCC6900D09848 /* InfoPlist.strings in Resources */,
-				880872C716FFCC6900D09848 /* MultiAccountTypeExampleTests-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		38C8357266BB451E85E7654B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
 		8808729216FFC90A00D09848 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -339,7 +366,9 @@
 				880872B716FFCA1200D09848 /* MAAppDelegate.m in Sources */,
 				880872BE16FFCA8100D09848 /* MultiAccountTypeExample.xcdatamodeld in Sources */,
 				880872C016FFCABC00D09848 /* main.m in Sources */,
-				880872D716FFCD3A00D09848 /* MAViewController.m in Sources */,
+				880872DA16FFDCB900D09848 /* MAGoogleAuthController.m in Sources */,
+				880872DD16FFE05C00D09848 /* MAApplicationViewController.m in Sources */,
+				880872E016FFE0FC00D09848 /* MATourViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +468,7 @@
 		};
 		880872A816FFC90B00D09848 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CD359962D5F451C94C6C5A2 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MultiAccountTypeExample/Source/MultiAccountTypeExample-Prefix.pch";
@@ -450,6 +480,7 @@
 		};
 		880872A916FFC90B00D09848 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CD359962D5F451C94C6C5A2 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MultiAccountTypeExample/Source/MultiAccountTypeExample-Prefix.pch";
@@ -512,6 +543,7 @@
 				880872A916FFC90B00D09848 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		880872AA16FFC90B00D09848 /* Build configuration list for PBXNativeTarget "MultiAccountTypeExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +552,7 @@
 				880872AC16FFC90B00D09848 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

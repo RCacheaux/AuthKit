@@ -3,7 +3,7 @@
 #import "AKAuthControl.h"
 
 @interface AKAuthMasterAccountViewController ()
-@property(nonatomic, strong) id<AKAuthControl> masterAccountAuthController;
+@property(nonatomic, strong, readwrite) id<AKAuthControl> masterAccountAuthController;
 @end
 
 @implementation AKAuthMasterAccountViewController
@@ -18,7 +18,7 @@
                  authController:(id<AKAuthControl>)authController {
   self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
   if (self) {
-    self.masterAccountAuthController = authController;
+    _masterAccountAuthController = authController;
   }
   return self;
 }

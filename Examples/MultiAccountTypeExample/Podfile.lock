@@ -1,0 +1,33 @@
+
+PODS:
+- AuthKit (0.0.1)
+- GTMHTTPFetcher (0.0.1)
+- gtm-oauth2 (0.0.1):
+  - GTMHTTPFetcher
+  - gtm-oauth2/Core (= 0.0.1)
+- gtm-oauth2/Core (0.0.1):
+  - GTMHTTPFetcher
+  - gtm-oauth2/Core/Mac (= 0.0.1)
+  - gtm-oauth2/Core/Touch (= 0.0.1)
+- gtm-oauth2/Core/Mac (0.0.1):
+  - GTMHTTPFetcher
+- gtm-oauth2/Core/Touch (0.0.1):
+  - GTMHTTPFetcher
+
+DEPENDENCIES:
+- AuthKit (from `~/Git/AuthKit')
+- gtm-oauth2 (>= 0.0.1)
+
+EXTERNAL SOURCES:
+  AuthKit:
+    :local: ~/Git/AuthKit
+
+SPEC CHECKSUMS:
+  AuthKit: fc15e656eba449c52ae99fb18dc3e4db5e5c6c1e
+  GTMHTTPFetcher: 080b3092be86256fe6259adec6061fb4b5c23689
+  gtm-oauth2: 8aaba73c8208da9e1ec9362c972f2ff7dd31ecb7
+  gtm-oauth2/Core: 8aaba73c8208da9e1ec9362c972f2ff7dd31ecb7
+  gtm-oauth2/Core/Mac: 8aaba73c8208da9e1ec9362c972f2ff7dd31ecb7
+  gtm-oauth2/Core/Touch: 8aaba73c8208da9e1ec9362c972f2ff7dd31ecb7
+
+COCOAPODS: 0.16.4

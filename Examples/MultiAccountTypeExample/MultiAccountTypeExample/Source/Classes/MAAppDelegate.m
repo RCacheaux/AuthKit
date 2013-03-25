@@ -1,6 +1,10 @@
 #import "MAAppDelegate.h"
 
-#import "MAViewController.h"
+#import "MAApplicationViewController.h"
+
+#import <AuthKit/AKAccount.h>
+
+#import "MAGoogleAuthController.h"
 
 @implementation MAAppDelegate
 
@@ -10,8 +14,13 @@
 
 - (BOOL)application:(UIApplication *)application
     didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+  MAGoogleAuthController *authController = [[MAGoogleAuthController alloc] init];
+  
   self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-  MAViewController *viewController = [[MAViewController alloc] init];
+  MAApplicationViewController *viewController =
+      [MAApplicationViewController
+       masterAccountViewControllerWithAuthController:authController];
+  authController.authHandler = viewController;
   self.window.rootViewController = viewController;
   [self.window makeKeyAndVisible];
   return YES;
