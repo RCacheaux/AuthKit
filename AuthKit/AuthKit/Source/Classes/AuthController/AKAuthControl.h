@@ -5,7 +5,8 @@
 // TODO(rcacheaux): Docs.
 @protocol AKAuthControl
 
+// TODO: Rename.
 - (void)authenticate;
-- (void)unauthenticate;
+- (void)unauthenticateAccount:(AKAccount *)account;
 
 @end

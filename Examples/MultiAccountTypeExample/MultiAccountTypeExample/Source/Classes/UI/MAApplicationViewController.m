@@ -53,6 +53,7 @@
 
 - (void)authControllerAccount:(AKAccount *)account
               didAuthenticate:(id<AKAuthControl>)authController {
+  // TODO: Check if exists.
   [self.loginViewController removeFromParentViewController];
   [self.loginViewController.view removeFromSuperview];
   self.tourViewController.view.backgroundColor = [UIColor greenColor];
