@@ -1,5 +1,6 @@
 
 PODS:
+- AFNetworking (1.2.0)
 - AuthKit (0.0.1)
 - GTMHTTPFetcher (0.0.1)
 - gtm-oauth2 (0.0.1):
@@ -15,6 +16,7 @@ PODS:
   - GTMHTTPFetcher
 
 DEPENDENCIES:
+- AFNetworking (>= 1.2.0)
 - AuthKit (from `~/Git/AuthKit')
 - gtm-oauth2 (>= 0.0.1)
 
@@ -23,6 +25,7 @@ EXTERNAL SOURCES:
     :local: ~/Git/AuthKit
 
 SPEC CHECKSUMS:
+  AFNetworking: 3cbae45f61a9f995cdbd56bd571223910d7f4e44
   AuthKit: fc15e656eba449c52ae99fb18dc3e4db5e5c6c1e
   GTMHTTPFetcher: 080b3092be86256fe6259adec6061fb4b5c23689
   gtm-oauth2: 8aaba73c8208da9e1ec9362c972f2ff7dd31ecb7
