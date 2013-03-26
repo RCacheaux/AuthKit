@@ -2,6 +2,7 @@
 
 #import <AuthKit/AKAuthHandler.h>
 #import <gtm-oauth2/GTMOAuth2ViewControllerTouch.h>
+#import <gtm-oauth2/GTMOAuth2SignIn.h>
 
 typedef  void (^GTMOAuth2CompletionHandler)(GTMOAuth2ViewControllerTouch *viewController,
                                             GTMOAuth2Authentication *auth,
@@ -37,6 +38,7 @@ static NSString * const kGoogleScope = @"https://www.googleapis.com/auth/plus.me
                                              clientSecret:kGoogleClientSecret
                                          keychainItemName:kGoogleKeychainItemName
                                         completionHandler:completionHandler];
+  
   if (self.authHandler) {
     [self.authHandler presentViewController:googleOAuth2WebViewController];
   }

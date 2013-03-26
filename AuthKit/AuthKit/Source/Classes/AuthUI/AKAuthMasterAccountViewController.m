@@ -64,7 +64,7 @@
 }
 
 - (void)unauthenticate {
-  [self.masterAccountAuthController unauthenticate];
+//  [self.masterAccountAuthController unauthenticate];
 }
 
 @end

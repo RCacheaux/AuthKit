@@ -5,6 +5,7 @@
 #import <AuthKit/AKAccount.h>
 
 #import "MAGoogleAuthController.h"
+#import "MALinkedInAuthController.h"
 
 @implementation MAAppDelegate
 
@@ -14,7 +15,7 @@
 
 - (BOOL)application:(UIApplication *)application
     didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-  MAGoogleAuthController *authController = [[MAGoogleAuthController alloc] init];
+  MALinkedInAuthController *authController = [[MALinkedInAuthController alloc] init];
   
   self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
   MAApplicationViewController *viewController =
