@@ -58,6 +58,7 @@ static NSString * const kGoogleScope = @"https://www.googleapis.com/auth/plus.me
   {
     if (!error) {
       // TODO(rcacheaux): Save authenticated account.
+      weakSelf.OAuth2AccessToken = auth.accessToken;
       [weakSelf.authHandler authControllerAccount:nil didAuthenticate:weakSelf];
     } else {
       // TODO(rcacheaux): Log error.

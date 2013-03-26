@@ -4,6 +4,9 @@
 
 #import "MATourViewController.h"
 
+#import "MALinkedInAuthController.h"
+#import "LinkedIn.h"
+
 @interface MAApplicationViewController ()<AKAuthControl>
 @property(nonatomic, strong) MATourViewController *tourViewController;
 @property(nonatomic, strong) UIViewController *loginViewController;
@@ -57,6 +60,15 @@
   [self.loginViewController removeFromParentViewController];
   [self.loginViewController.view removeFromSuperview];
   self.tourViewController.view.backgroundColor = [UIColor greenColor];
+  
+  MALinkedInAuthController *linkedInAuthController =
+      (MALinkedInAuthController *)self.masterAccountAuthController;
+  
+  
+  [LinkedIn getPeopleCurrentWithCompletionHandler:^(NSDictionary *profile, NSError *error) {
+    NSLog(@"Data: %@", profile);
+  } token:linkedInAuthController.OAuth2AccessToken];
+  
 }
 
 @end

@@ -27,6 +27,8 @@
 		880872DA16FFDCB900D09848 /* MAGoogleAuthController.m in Sources */ = {isa = PBXBuildFile; fileRef = 880872D916FFDCB900D09848 /* MAGoogleAuthController.m */; };
 		880872DD16FFE05C00D09848 /* MAApplicationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 880872DC16FFE05B00D09848 /* MAApplicationViewController.m */; };
 		880872E016FFE0FC00D09848 /* MATourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 880872DF16FFE0FB00D09848 /* MATourViewController.m */; };
+		880872E8170121C800D09848 /* LIHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 880872E7170121C800D09848 /* LIHTTPClient.m */; };
+		880872EB1701242100D09848 /* LinkedIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 880872EA1701242100D09848 /* LinkedIn.m */; };
 		9E58DA3EB1E94EB2ACAA741D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E88340C6DFEA4AB7A8B8D4F7 /* libPods.a */; };
 		9F5649A61700D93A00AB8AC2 /* MALinkedInAuthController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5649A51700D93A00AB8AC2 /* MALinkedInAuthController.m */; };
 /* End PBXBuildFile section */
@@ -69,6 +71,10 @@
 		880872DC16FFE05B00D09848 /* MAApplicationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAApplicationViewController.m; sourceTree = "<group>"; };
 		880872DE16FFE0FB00D09848 /* MATourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MATourViewController.h; sourceTree = "<group>"; };
 		880872DF16FFE0FB00D09848 /* MATourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MATourViewController.m; sourceTree = "<group>"; };
+		880872E6170121C800D09848 /* LIHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LIHTTPClient.h; sourceTree = "<group>"; };
+		880872E7170121C800D09848 /* LIHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LIHTTPClient.m; sourceTree = "<group>"; };
+		880872E91701242100D09848 /* LinkedIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedIn.h; sourceTree = "<group>"; };
+		880872EA1701242100D09848 /* LinkedIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkedIn.m; sourceTree = "<group>"; };
 		8CD359962D5F451C94C6C5A2 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		9F5649A41700D93A00AB8AC2 /* MALinkedInAuthController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MALinkedInAuthController.h; sourceTree = "<group>"; };
 		9F5649A51700D93A00AB8AC2 /* MALinkedInAuthController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MALinkedInAuthController.m; sourceTree = "<group>"; };
@@ -169,6 +175,7 @@
 		880872AE16FFCA1200D09848 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				880872E5170121A300D09848 /* Communication */,
 				880872AF16FFCA1200D09848 /* Auth */,
 				880872B216FFCA1200D09848 /* UI */,
 				880872B016FFCA1200D09848 /* MAAppDelegate.h */,
@@ -241,6 +248,17 @@
 				880872D216FFCCD700D09848 /* InfoPlist.strings */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		880872E5170121A300D09848 /* Communication */ = {
+			isa = PBXGroup;
+			children = (
+				880872E6170121C800D09848 /* LIHTTPClient.h */,
+				880872E7170121C800D09848 /* LIHTTPClient.m */,
+				880872E91701242100D09848 /* LinkedIn.h */,
+				880872EA1701242100D09848 /* LinkedIn.m */,
+			);
+			path = Communication;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -375,6 +393,8 @@
 				880872DD16FFE05C00D09848 /* MAApplicationViewController.m in Sources */,
 				880872E016FFE0FC00D09848 /* MATourViewController.m in Sources */,
 				9F5649A61700D93A00AB8AC2 /* MALinkedInAuthController.m in Sources */,
+				880872E8170121C800D09848 /* LIHTTPClient.m in Sources */,
+				880872EB1701242100D09848 /* LinkedIn.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
