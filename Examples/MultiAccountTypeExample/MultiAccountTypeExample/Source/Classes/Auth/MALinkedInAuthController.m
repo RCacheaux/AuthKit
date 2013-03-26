@@ -1,6 +1,8 @@
 #import "MALinkedInAuthController.h"
 
 #import <AuthKit/AKAuthHandler.h>
+#import <AuthKit/AKAccountStore.h>
+#import <AuthKit/AKAccount.h>
 #import <gtm-oauth2/GTMOAuth2ViewControllerTouch.h>
 #import <gtm-oauth2/GTMOAuth2Authentication.h>
 #import <gtm-oauth2/GTMOAuth2SignIn.h>
@@ -8,43 +10,6 @@
 typedef  void (^GTMOAuth2CompletionHandler)(GTMOAuth2ViewControllerTouch *viewController,
                                             GTMOAuth2Authentication *auth,
                                             NSError *error);
-
-static NSString * const kGoogleKeychainItemName = @"AuthKit Example: Google";
-static NSString * const kGoogleClientID =
-    @"581129179651-vdisshpchki6tnmhhte6k6lh7jj74icj.apps.googleusercontent.com";
-static NSString * const kGoogleClientSecret = @"MaOWg_eoxSbkx3S5Zt7EM5RA";
-static NSString * const kGoogleScope = @"https://www.googleapis.com/auth/plus.me";
-
-
-/*
- 
- // Request properties
- @property (copy) NSString *clientID;
- @property (copy) NSString *clientSecret;
- @property (copy) NSString *redirectURI;
- @property (retain) NSString *scope;
- @property (retain) NSString *tokenType;
- @property (retain) NSString *assertion;
- @property (retain) NSString *refreshScope;
- 
- // Apps may optionally add parameters here to be provided to the token
- // endpoint on token requests and refreshes.
- @property (retain) NSDictionary *additionalTokenRequestParameters;
- 
- // Apps may optionally add parameters here to be provided to the token
- // endpoint on specific token requests and refreshes, keyed by the grant_type.
- // For example, if a different "type" parameter is required for obtaining
- // the auth code and on refresh, this might be:
- //
- //  viewController.authentication.additionalGrantTypeRequestParameters = @{
- //    @"authorization_code" : @{ @"type" : @"code" },
- //    @"refresh_token" : @{ @"type" : @"refresh" }
- //  };
- @property (retain) NSDictionary *additionalGrantTypeRequestParameters;
- 
- 
- */
-
 
 @implementation MALinkedInAuthController
 
@@ -58,8 +23,10 @@ static NSString * const kGoogleScope = @"https://www.googleapis.com/auth/plus.me
   {
     if (!error) {
       // TODO(rcacheaux): Save authenticated account.
-      weakSelf.OAuth2AccessToken = auth.accessToken;
-      [weakSelf.authHandler authControllerAccount:nil didAuthenticate:weakSelf];
+      AKAccount *masterAccount = [[AKAccountStore sharedStore] newAccount];
+      masterAccount.credentials = auth.accessToken;
+      [[AKAccountStore sharedStore] saveMasterAccount:masterAccount];
+      [weakSelf.authHandler authControllerAccount:masterAccount didAuthenticate:weakSelf];
     } else {
       // TODO(rcacheaux): Log error.
     }
@@ -88,6 +55,11 @@ static NSString * const kGoogleScope = @"https://www.googleapis.com/auth/plus.me
   if (self.authHandler) {
     [self.authHandler presentViewController:googleOAuth2WebViewController];
   }
+}
+
+- (void)unauthenticateAccount:(AKAccount *)account {
+  [[AKAccountStore sharedStore] authenticatedMasterAccount].credentials = nil;
+  [self.authHandler authControllerAccount:account didUnauthenticate:self];
 }
 
 @end

@@ -1,10 +1,10 @@
 #import "LIHTTPClient.h"
 
+#import <AuthKit/AKAccountStore.h>
+#import <AuthKit/AKAccount.h>
 #import <AFNetworking/AFJSONRequestOperation.h>
 
 static NSString * const kAFLinkedInAPIBaseURLString = @"https://api.linkedin.com/v1";
-//static NSString * const kIGInstagramClientID = @"439b3f99492943b7b20b0bead946e4ff";
-//static NSString * const kIGInstagramClientID = @"18988a9dfa2543bbb5343dcd7ecc6965";
 
 @implementation LIHTTPClient
 
@@ -27,9 +27,6 @@ static NSString * const kAFLinkedInAPIBaseURLString = @"https://api.linkedin.com
   [self registerHTTPOperationClass:[AFJSONRequestOperation class]];
 	[self setDefaultHeader:@"Accept" value:@"application/json"];
   [self setDefaultHeader:@"x-li-format" value:@"json"];
-  
-  //oauth2_access_token=access_token
-  
   return self;
 }
 
@@ -38,7 +35,8 @@ static NSString * const kAFLinkedInAPIBaseURLString = @"https://api.linkedin.com
                                 parameters:(NSDictionary *)parameters {
   NSMutableDictionary *mutableParameters =
       [NSMutableDictionary dictionaryWithDictionary:parameters];
-//  mutableParameters[@"client_id"] = kIGInstagramClientID;
+  AKAccount *masterAccount = [[AKAccountStore sharedStore] authenticatedMasterAccount];
+  [mutableParameters setObject:masterAccount.credentials forKey:@"oauth2_access_token"];
   return [super requestWithMethod:method path:path parameters:[mutableParameters copy]];
 }
 

@@ -8,5 +8,6 @@
 @property(nonatomic, copy) NSString *username;
 @property(nonatomic, strong) AKAccountType *accountType;
 @property(nonatomic, strong) NSMutableDictionary *userInfo;
+@property(nonatomic, copy) NSString *credentials;
 
 @end

@@ -15,7 +15,7 @@
 
 - (BOOL)application:(UIApplication *)application
     didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-  MALinkedInAuthController *authController = [[MALinkedInAuthController alloc] init];
+  MALinkedInAuthController *authController = [MALinkedInAuthController sharedController];
   
   self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
   MAApplicationViewController *viewController =

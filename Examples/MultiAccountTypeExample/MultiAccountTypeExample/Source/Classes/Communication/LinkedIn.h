@@ -5,8 +5,7 @@ typedef void (^LIGetPeopleCurrentResponse)(NSDictionary *profile,
 
 @interface LinkedIn : NSObject
 
-+ (void)
-    getPeopleCurrentWithCompletionHandler:(LIGetPeopleCurrentResponse)completionHandler
-                                    token:(NSString *)token;
++ (void)getPeopleCurrentWithCompletionHandler:
+    (LIGetPeopleCurrentResponse)completionHandler;
 
 @end

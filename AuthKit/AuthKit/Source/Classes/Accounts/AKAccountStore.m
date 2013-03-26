@@ -5,9 +5,19 @@
 // TODO(rcacheaux): Enforce unique username for each account of type n.
 @interface AKAccountStore ()
 @property(nonatomic, strong) NSMutableDictionary *accounts;
+@property(nonatomic, strong) AKAccount *masterAccount;
 @end
 
 @implementation AKAccountStore
+
++ (instancetype)sharedStore {
+  static AKAccountStore *_sharedStore = nil;
+  static dispatch_once_t onceToken;
+  dispatch_once(&onceToken, ^{
+    _sharedStore = [[self alloc] init];
+  });
+  return _sharedStore;
+}
 
 - (id)init {
   self = [super init];
@@ -42,6 +52,14 @@
     withCompletionHandler:(void (^)())completionHandler {
   self.accounts[account.identifier] = account;
   completionHandler ? completionHandler() : NULL;
+}
+
+- (void)saveMasterAccount:(AKAccount *)account {
+  self.masterAccount = account;
+}
+
+- (AKAccount *)authenticatedMasterAccount {
+  return self.masterAccount;
 }
 
 @end

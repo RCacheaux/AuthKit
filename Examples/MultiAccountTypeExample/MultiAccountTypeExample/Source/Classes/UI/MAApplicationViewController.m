@@ -3,13 +3,12 @@
 #import <AuthKit/AKAuthControl.h>
 
 #import "MATourViewController.h"
-
-#import "MALinkedInAuthController.h"
-#import "LinkedIn.h"
+#import "MALinkedInViewController.h"
 
 @interface MAApplicationViewController ()<AKAuthControl>
 @property(nonatomic, strong) MATourViewController *tourViewController;
 @property(nonatomic, strong) UIViewController *loginViewController;
+@property(nonatomic, strong) MALinkedInViewController *linkedInViewController;
 @end
 
 @implementation MAApplicationViewController
@@ -46,6 +45,10 @@
   [self.masterAccountAuthController authenticate];
 }
 
+- (void)unauthenticateAccount:(AKAccount *)account {
+  [self.masterAccountAuthController unauthenticateAccount:account];
+}
+
 #pragma mark AKAuthHandler
 
 - (void)presentViewController:(UIViewController *)viewController {
@@ -57,18 +60,26 @@
 - (void)authControllerAccount:(AKAccount *)account
               didAuthenticate:(id<AKAuthControl>)authController {
   // TODO: Check if exists.
-  [self.loginViewController removeFromParentViewController];
   [self.loginViewController.view removeFromSuperview];
-  self.tourViewController.view.backgroundColor = [UIColor greenColor];
+  [self.loginViewController removeFromParentViewController];
   
-  MALinkedInAuthController *linkedInAuthController =
-      (MALinkedInAuthController *)self.masterAccountAuthController;
+  [self.tourViewController.view removeFromSuperview];
+  [self.tourViewController removeFromParentViewController];
   
+  self.linkedInViewController = [[MALinkedInViewController alloc] init];
+  self.linkedInViewController.authControl = self;
+  self.linkedInViewController.view.frame = self.view.bounds;
+  [self addChildViewController:self.linkedInViewController];
+  [self.view addSubview:self.linkedInViewController.view];
+}
+
+- (void)authControllerAccount:(AKAccount *)account
+            didUnauthenticate:(id<AKAuthControl>)authController {
+  [self.linkedInViewController.view removeFromSuperview];
+  [self.linkedInViewController removeFromParentViewController];
   
-  [LinkedIn getPeopleCurrentWithCompletionHandler:^(NSDictionary *profile, NSError *error) {
-    NSLog(@"Data: %@", profile);
-  } token:linkedInAuthController.OAuth2AccessToken];
-  
+  [self addChildViewController:self.tourViewController];
+  [self.view addSubview:self.tourViewController.view];
 }
 
 @end
