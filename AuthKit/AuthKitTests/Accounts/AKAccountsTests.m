@@ -41,8 +41,8 @@
                              beforeDate:[NSDate distantFuture]];
   }
   
-  AKAccount *savedAccount = [self.accountStore accountWithType:nil
-                                                      username:accountUsername];
+  AKAccount *savedAccount = [self.accountStore accountOfType:nil
+                                                withUsername:accountUsername];
   STAssertEqualObjects(account.identifier, savedAccount.identifier, nil);
 }
 
@@ -65,12 +65,12 @@
   }
   
   AKAccount *savedAccountOne =
-      [self.accountStore accountWithType:nil
-                                username:self.accountOneUsername];
+      [self.accountStore accountOfType:nil
+                          withUsername:self.accountOneUsername];
   STAssertEqualObjects(self.accountOne.identifier, savedAccountOne.identifier, nil);
   AKAccount *savedAccountTwo =
-      [self.accountStore accountWithType:nil
-                                username:self.accountTwoUsername];
+      [self.accountStore accountOfType:nil
+                          withUsername:self.accountTwoUsername];
   STAssertEqualObjects(self.accountTwo.identifier, savedAccountTwo.identifier, nil);
 }
 
@@ -90,8 +90,8 @@
   }
   
   AKAccount *savedAccountOne =
-      [self.accountStore accountWithType:nil
-                                username:self.accountOneUsername];
+      [self.accountStore accountOfType:nil
+                          withUsername:self.accountOneUsername];
   STAssertEqualObjects(self.accountOne.userInfo[userInfoItemKey],
                        savedAccountOne.userInfo[userInfoItemKey], nil);
   

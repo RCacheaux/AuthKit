@@ -16,7 +16,6 @@
 		8808723316FF9AC600D09848 /* AKAuthMasterAccountViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8808723216FF9AC600D09848 /* AKAuthMasterAccountViewControllerTests.m */; };
 		8808725416FFC43D00D09848 /* AKAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 8808724316FFC43D00D09848 /* AKAccount.m */; };
 		8808725516FFC43D00D09848 /* AKAccountStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 8808724616FFC43D00D09848 /* AKAccountStore.m */; };
-		8808725616FFC43D00D09848 /* AKAccountType.m in Sources */ = {isa = PBXBuildFile; fileRef = 8808724816FFC43D00D09848 /* AKAccountType.m */; };
 		8808725716FFC43D00D09848 /* AKAuthController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8808724C16FFC43D00D09848 /* AKAuthController.m */; };
 		8808725816FFC43D00D09848 /* AKAuthMasterAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8808725016FFC43D00D09848 /* AKAuthMasterAccountViewController.m */; };
 		8808725916FFC43D00D09848 /* AKDataPartitions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8808725316FFC43D00D09848 /* AKDataPartitions.m */; };
@@ -61,8 +60,6 @@
 		8808724416FFC43D00D09848 /* AKAccount_Protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKAccount_Protected.h; sourceTree = "<group>"; };
 		8808724516FFC43D00D09848 /* AKAccountStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKAccountStore.h; sourceTree = "<group>"; };
 		8808724616FFC43D00D09848 /* AKAccountStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKAccountStore.m; sourceTree = "<group>"; };
-		8808724716FFC43D00D09848 /* AKAccountType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKAccountType.h; sourceTree = "<group>"; };
-		8808724816FFC43D00D09848 /* AKAccountType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKAccountType.m; sourceTree = "<group>"; };
 		8808724A16FFC43D00D09848 /* AKAuthControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKAuthControl.h; sourceTree = "<group>"; };
 		8808724B16FFC43D00D09848 /* AKAuthController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKAuthController.h; sourceTree = "<group>"; };
 		8808724C16FFC43D00D09848 /* AKAuthController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKAuthController.m; sourceTree = "<group>"; };
@@ -181,8 +178,6 @@
 				8808724416FFC43D00D09848 /* AKAccount_Protected.h */,
 				8808724516FFC43D00D09848 /* AKAccountStore.h */,
 				8808724616FFC43D00D09848 /* AKAccountStore.m */,
-				8808724716FFC43D00D09848 /* AKAccountType.h */,
-				8808724816FFC43D00D09848 /* AKAccountType.m */,
 			);
 			path = Accounts;
 			sourceTree = "<group>";
@@ -427,7 +422,6 @@
 				9F78C44E16DD576E00605174 /* AKViewController.m in Sources */,
 				8808725416FFC43D00D09848 /* AKAccount.m in Sources */,
 				8808725516FFC43D00D09848 /* AKAccountStore.m in Sources */,
-				8808725616FFC43D00D09848 /* AKAccountType.m in Sources */,
 				8808725716FFC43D00D09848 /* AKAuthController.m in Sources */,
 				8808725816FFC43D00D09848 /* AKAuthMasterAccountViewController.m in Sources */,
 				8808725916FFC43D00D09848 /* AKDataPartitions.m in Sources */,
