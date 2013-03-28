@@ -34,7 +34,7 @@
   return newAccount;
 }
 
-- (AKAccount *)accountWithType:(NSString *)type username:(NSString *)username {
+- (AKAccount *)accountOfType:(NSString *)type withUsername:(NSString *)username {
   for (NSString *identifier in self.accounts) {
     AKAccount *account = self.accounts[identifier];
     if ([account.username isEqualToString:username]) {
