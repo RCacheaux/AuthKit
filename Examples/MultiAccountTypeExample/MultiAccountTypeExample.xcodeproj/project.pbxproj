@@ -35,6 +35,7 @@
 		9FCED9CE1704C8D200FDABE0 /* AKOAuth2Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCED9CD1704C8D200FDABE0 /* AKOAuth2Account.m */; };
 		9FCED9D11704C93700FDABE0 /* AKOAuth2AccountCredential.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCED9D01704C93700FDABE0 /* AKOAuth2AccountCredential.m */; };
 		9FCED9D71704CA4E00FDABE0 /* AKGTMOAuth2Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCED9D61704CA4E00FDABE0 /* AKGTMOAuth2Account.m */; };
+		9FCED9DA1704E4FB00FDABE0 /* MAAccountStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCED9D91704E4FA00FDABE0 /* MAAccountStore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,8 @@
 		9FCED9D01704C93700FDABE0 /* AKOAuth2AccountCredential.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKOAuth2AccountCredential.m; sourceTree = "<group>"; };
 		9FCED9D51704CA4E00FDABE0 /* AKGTMOAuth2Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKGTMOAuth2Account.h; sourceTree = "<group>"; };
 		9FCED9D61704CA4E00FDABE0 /* AKGTMOAuth2Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKGTMOAuth2Account.m; sourceTree = "<group>"; };
+		9FCED9D81704E4FA00FDABE0 /* MAAccountStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAAccountStore.h; sourceTree = "<group>"; };
+		9FCED9D91704E4FA00FDABE0 /* MAAccountStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAAccountStore.m; sourceTree = "<group>"; };
 		E88340C6DFEA4AB7A8B8D4F7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -209,6 +212,8 @@
 				9FCED9D01704C93700FDABE0 /* AKOAuth2AccountCredential.m */,
 				9FCED9D51704CA4E00FDABE0 /* AKGTMOAuth2Account.h */,
 				9FCED9D61704CA4E00FDABE0 /* AKGTMOAuth2Account.m */,
+				9FCED9D81704E4FA00FDABE0 /* MAAccountStore.h */,
+				9FCED9D91704E4FA00FDABE0 /* MAAccountStore.m */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -419,6 +424,7 @@
 				9FCED9CE1704C8D200FDABE0 /* AKOAuth2Account.m in Sources */,
 				9FCED9D11704C93700FDABE0 /* AKOAuth2AccountCredential.m in Sources */,
 				9FCED9D71704CA4E00FDABE0 /* AKGTMOAuth2Account.m in Sources */,
+				9FCED9DA1704E4FB00FDABE0 /* MAAccountStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
