@@ -17,12 +17,12 @@ PODS:
 
 DEPENDENCIES:
 - AFNetworking (>= 1.2.0)
-- AuthKit (from `~/Git/AuthKit')
+- AuthKit (from `../..')
 - gtm-oauth2 (>= 0.0.1)
 
 EXTERNAL SOURCES:
   AuthKit:
-    :local: ~/Git/AuthKit
+    :local: ../..
 
 SPEC CHECKSUMS:
   AFNetworking: 3cbae45f61a9f995cdbd56bd571223910d7f4e44

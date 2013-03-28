@@ -32,6 +32,9 @@
 		880872EE1701659700D09848 /* MALinkedInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 880872ED1701659700D09848 /* MALinkedInViewController.m */; };
 		9E58DA3EB1E94EB2ACAA741D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E88340C6DFEA4AB7A8B8D4F7 /* libPods.a */; };
 		9F5649A61700D93A00AB8AC2 /* MALinkedInAuthController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5649A51700D93A00AB8AC2 /* MALinkedInAuthController.m */; };
+		9FCED9CE1704C8D200FDABE0 /* AKOAuth2Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCED9CD1704C8D200FDABE0 /* AKOAuth2Account.m */; };
+		9FCED9D11704C93700FDABE0 /* AKOAuth2AccountCredential.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCED9D01704C93700FDABE0 /* AKOAuth2AccountCredential.m */; };
+		9FCED9D71704CA4E00FDABE0 /* AKGTMOAuth2Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCED9D61704CA4E00FDABE0 /* AKGTMOAuth2Account.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +84,12 @@
 		8CD359962D5F451C94C6C5A2 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		9F5649A41700D93A00AB8AC2 /* MALinkedInAuthController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MALinkedInAuthController.h; sourceTree = "<group>"; };
 		9F5649A51700D93A00AB8AC2 /* MALinkedInAuthController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MALinkedInAuthController.m; sourceTree = "<group>"; };
+		9FCED9CC1704C8D200FDABE0 /* AKOAuth2Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKOAuth2Account.h; sourceTree = "<group>"; };
+		9FCED9CD1704C8D200FDABE0 /* AKOAuth2Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKOAuth2Account.m; sourceTree = "<group>"; };
+		9FCED9CF1704C93700FDABE0 /* AKOAuth2AccountCredential.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKOAuth2AccountCredential.h; sourceTree = "<group>"; };
+		9FCED9D01704C93700FDABE0 /* AKOAuth2AccountCredential.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKOAuth2AccountCredential.m; sourceTree = "<group>"; };
+		9FCED9D51704CA4E00FDABE0 /* AKGTMOAuth2Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKGTMOAuth2Account.h; sourceTree = "<group>"; };
+		9FCED9D61704CA4E00FDABE0 /* AKGTMOAuth2Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKGTMOAuth2Account.m; sourceTree = "<group>"; };
 		E88340C6DFEA4AB7A8B8D4F7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -194,6 +203,12 @@
 				880872D916FFDCB900D09848 /* MAGoogleAuthController.m */,
 				9F5649A41700D93A00AB8AC2 /* MALinkedInAuthController.h */,
 				9F5649A51700D93A00AB8AC2 /* MALinkedInAuthController.m */,
+				9FCED9CC1704C8D200FDABE0 /* AKOAuth2Account.h */,
+				9FCED9CD1704C8D200FDABE0 /* AKOAuth2Account.m */,
+				9FCED9CF1704C93700FDABE0 /* AKOAuth2AccountCredential.h */,
+				9FCED9D01704C93700FDABE0 /* AKOAuth2AccountCredential.m */,
+				9FCED9D51704CA4E00FDABE0 /* AKGTMOAuth2Account.h */,
+				9FCED9D61704CA4E00FDABE0 /* AKGTMOAuth2Account.m */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -401,6 +416,9 @@
 				880872E8170121C800D09848 /* LIHTTPClient.m in Sources */,
 				880872EB1701242100D09848 /* LinkedIn.m in Sources */,
 				880872EE1701659700D09848 /* MALinkedInViewController.m in Sources */,
+				9FCED9CE1704C8D200FDABE0 /* AKOAuth2Account.m in Sources */,
+				9FCED9D11704C93700FDABE0 /* AKOAuth2AccountCredential.m in Sources */,
+				9FCED9D71704CA4E00FDABE0 /* AKGTMOAuth2Account.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

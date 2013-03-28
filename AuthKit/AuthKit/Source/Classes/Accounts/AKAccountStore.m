@@ -27,10 +27,13 @@
   return self;
 }
 
-- (AKAccount *)newAccount {
+- (AKAccount *)newAccountOfType:(Class)type {
+  NSAssert([type isSubclassOfClass:[AKAccount class]], nil);
+  // TODO(rcacheaux): Look at Map of types to classes.
+  
   // TODO(rcacheaux): Cache identifiers for new unsaved accounts to make sure
   // the save method only saves accounts created from this class.
-  AKAccount *newAccount = [AKAccount accountWithIdentifier:[[NSUUID UUID] UUIDString]];
+  AKAccount *newAccount = [type accountWithIdentifier:[[NSUUID UUID] UUIDString]];
   return newAccount;
 }
 

@@ -1,5 +1,5 @@
 platform :ios, '6.1'
 
-pod 'AuthKit', :local => '~/Git/AuthKit'
+pod 'AuthKit', :local => '../..'
 pod 'gtm-oauth2', '>= 0.0.1'
 pod 'AFNetworking', '>= 1.2.0'

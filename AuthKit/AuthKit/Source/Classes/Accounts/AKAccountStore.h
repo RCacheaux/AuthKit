@@ -9,7 +9,8 @@ typedef void (^AKCompletionHandler)();
 
 + (instancetype)sharedStore;
 
-- (AKAccount *)newAccount;
+- (AKAccount *)newAccountOfType:(Class)type;
+
 - (AKAccount *)accountWithIdentifier:(NSString *)identifier;
 - (AKAccount *)accountOfType:(NSString *)type withUsername:(NSString *)username;
 - (void)saveAccount:(AKAccount *)account

@@ -7,6 +7,8 @@
 #import <gtm-oauth2/GTMOAuth2Authentication.h>
 #import <gtm-oauth2/GTMOAuth2SignIn.h>
 
+#import "AKGTMOAuth2Account.h"
+
 typedef  void (^GTMOAuth2CompletionHandler)(GTMOAuth2ViewControllerTouch *viewController,
                                             GTMOAuth2Authentication *auth,
                                             NSError *error);
@@ -23,8 +25,9 @@ typedef  void (^GTMOAuth2CompletionHandler)(GTMOAuth2ViewControllerTouch *viewCo
   {
     if (!error) {
       // TODO(rcacheaux): Save authenticated account.
-      AKAccount *masterAccount = [[AKAccountStore sharedStore] newAccount];
-      masterAccount.credentials = auth.accessToken;
+      AKGTMOAuth2Account *masterAccount =
+          (AKGTMOAuth2Account *)[[AKAccountStore sharedStore]
+                                 newAccountOfType:[AKGTMOAuth2Account class]];
       [[AKAccountStore sharedStore] saveMasterAccount:masterAccount];
       [weakSelf.authHandler authControllerAccount:masterAccount didAuthenticate:weakSelf];
     } else {
