@@ -2,6 +2,8 @@
 
 @implementation AKAuthController
 
+// TODO(rcacheaux): Add Login VC.
+
 + (instancetype)sharedController {
   static AKAuthController *_sharedController = nil;
   static dispatch_once_t onceToken;
