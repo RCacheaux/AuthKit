@@ -57,6 +57,11 @@
   // TODO(rcacheaux): Implement.
 }
 
+- (UIViewController *)authPresentingViewController {
+  // TODO(rcacheaux): Implement.
+  return nil;
+}
+
 #pragma mark AKAuthenticatableViewController
 
 - (void)authenticate {
