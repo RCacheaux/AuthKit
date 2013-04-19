@@ -13,6 +13,7 @@
               didAuthenticate:(id<AKAuthControl>)authController;
 - (void)authControllerAccount:(AKAccount *)account
             didUnauthenticate:(id<AKAuthControl>)authController;
+- (UIViewController *)authPresentingViewController;
 
 @end
 

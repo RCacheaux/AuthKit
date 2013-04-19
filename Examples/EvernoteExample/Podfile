@@ -1,0 +1,4 @@
+platform :ios, '6.1'
+
+pod 'Evernote-SDK-iOS'
+pod 'AuthKit', :local => '../..'

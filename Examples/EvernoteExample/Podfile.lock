@@ -1,0 +1,20 @@
+PODS:
+  - AuthKit (0.0.1)
+  - Evernote-SDK-iOS (1.1.1):
+    - SSKeychain (= 0.2.1)
+  - SSKeychain (0.2.1)
+
+DEPENDENCIES:
+  - AuthKit (from `../..`)
+  - Evernote-SDK-iOS
+
+EXTERNAL SOURCES:
+  AuthKit:
+    :local: ../..
+
+SPEC CHECKSUMS:
+  AuthKit: fc15e656eba449c52ae99fb18dc3e4db5e5c6c1e
+  Evernote-SDK-iOS: 8660ee2442866de83aaf490a45550b056c2f4f67
+  SSKeychain: ffa1a79eb716d9ed1ca184fb0cf218087ca28486
+
+COCOAPODS: 0.18.1
