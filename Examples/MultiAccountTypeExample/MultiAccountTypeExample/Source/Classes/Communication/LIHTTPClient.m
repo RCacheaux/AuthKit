@@ -38,7 +38,8 @@ static NSString * const kAFLinkedInAPIBaseURLString = @"https://api.linkedin.com
                                 parameters:(NSDictionary *)parameters {
   NSMutableDictionary *mutableParameters =
       [NSMutableDictionary dictionaryWithDictionary:parameters];
-  AKGTMOAuth2Account *masterAccount = [[AKAccountStore sharedStore] authenticatedMasterAccount];
+  AKGTMOAuth2Account *masterAccount =
+      (AKGTMOAuth2Account *)[[AKAccountStore sharedStore] authenticatedAccount];
   
   [mutableParameters setObject:masterAccount.OAuth2Credential.accessToken
                         forKey:@"oauth2_access_token"];

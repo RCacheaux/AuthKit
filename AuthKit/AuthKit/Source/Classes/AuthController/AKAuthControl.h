@@ -2,13 +2,12 @@
 
 @class AKAccount;
 
-// TODO(rcacheaux): Docs.
 @protocol AKAuthControl
 
-// TODO(rcacheaux): Add method for handling cancel login.
-
-// TODO: Rename.
-- (void)authenticate;
+- (void)beginAuthenticationAttempt;
 - (void)unauthenticateAccount:(AKAccount *)account;
 
 @end
+
+// TODO(rcacheaux): Docs.
+// TODO(rcacheaux): Add method for handling cancel login.

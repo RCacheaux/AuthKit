@@ -30,6 +30,7 @@
 		880872E8170121C800D09848 /* LIHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 880872E7170121C800D09848 /* LIHTTPClient.m */; };
 		880872EB1701242100D09848 /* LinkedIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 880872EA1701242100D09848 /* LinkedIn.m */; };
 		880872EE1701659700D09848 /* MALinkedInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 880872ED1701659700D09848 /* MALinkedInViewController.m */; };
+		885BAE66170591140067C771 /* AKGTMOAuth2AuthController.m in Sources */ = {isa = PBXBuildFile; fileRef = 885BAE65170591140067C771 /* AKGTMOAuth2AuthController.m */; };
 		9E58DA3EB1E94EB2ACAA741D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E88340C6DFEA4AB7A8B8D4F7 /* libPods.a */; };
 		9F5649A61700D93A00AB8AC2 /* MALinkedInAuthController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5649A51700D93A00AB8AC2 /* MALinkedInAuthController.m */; };
 		9FCED9CE1704C8D200FDABE0 /* AKOAuth2Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCED9CD1704C8D200FDABE0 /* AKOAuth2Account.m */; };
@@ -82,6 +83,8 @@
 		880872EA1701242100D09848 /* LinkedIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkedIn.m; sourceTree = "<group>"; };
 		880872EC1701659700D09848 /* MALinkedInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MALinkedInViewController.h; sourceTree = "<group>"; };
 		880872ED1701659700D09848 /* MALinkedInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MALinkedInViewController.m; sourceTree = "<group>"; };
+		885BAE64170591140067C771 /* AKGTMOAuth2AuthController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKGTMOAuth2AuthController.h; sourceTree = "<group>"; };
+		885BAE65170591140067C771 /* AKGTMOAuth2AuthController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKGTMOAuth2AuthController.m; sourceTree = "<group>"; };
 		8CD359962D5F451C94C6C5A2 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		9F5649A41700D93A00AB8AC2 /* MALinkedInAuthController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MALinkedInAuthController.h; sourceTree = "<group>"; };
 		9F5649A51700D93A00AB8AC2 /* MALinkedInAuthController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MALinkedInAuthController.m; sourceTree = "<group>"; };
@@ -214,6 +217,8 @@
 				9FCED9D61704CA4E00FDABE0 /* AKGTMOAuth2Account.m */,
 				9FCED9D81704E4FA00FDABE0 /* MAAccountStore.h */,
 				9FCED9D91704E4FA00FDABE0 /* MAAccountStore.m */,
+				885BAE64170591140067C771 /* AKGTMOAuth2AuthController.h */,
+				885BAE65170591140067C771 /* AKGTMOAuth2AuthController.m */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -425,6 +430,7 @@
 				9FCED9D11704C93700FDABE0 /* AKOAuth2AccountCredential.m in Sources */,
 				9FCED9D71704CA4E00FDABE0 /* AKGTMOAuth2Account.m in Sources */,
 				9FCED9DA1704E4FB00FDABE0 /* MAAccountStore.m in Sources */,
+				885BAE66170591140067C771 /* AKGTMOAuth2AuthController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

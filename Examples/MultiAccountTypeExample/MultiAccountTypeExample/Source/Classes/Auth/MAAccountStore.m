@@ -1,8 +1,11 @@
 #import "MAAccountStore.h"
 
+#import "AKGTMOAuth2Account.h"
+
 @implementation MAAccountStore
 
-// TODO(rcacheaux): Map accounts to ids.
-
+- (Class)accountTypeClass {
+  return [AKGTMOAuth2Account class];
+}
 
 @end

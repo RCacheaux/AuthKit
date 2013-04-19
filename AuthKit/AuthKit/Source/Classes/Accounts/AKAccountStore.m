@@ -6,6 +6,7 @@
 @interface AKAccountStore ()
 @property(nonatomic, strong) NSMutableDictionary *accounts;
 @property(nonatomic, strong) AKAccount *masterAccount;
+@property(nonatomic, assign) Class accountTypeClass;
 @end
 
 @implementation AKAccountStore
@@ -23,17 +24,20 @@
   self = [super init];
   if (self) {
     _accounts = [NSMutableDictionary dictionary];
+    _accountTypeClass = [AKAccount class];
   }
   return self;
 }
 
-- (AKAccount *)newAccountOfType:(Class)type {
-  NSAssert([type isSubclassOfClass:[AKAccount class]], nil);
-  // TODO(rcacheaux): Look at Map of types to classes.
-  
+- (void)registerAccountTypeClass:(Class)accountTypeClass {
+  self.accountTypeClass = accountTypeClass;
+}
+
+- (AKAccount *)newAccount; {
   // TODO(rcacheaux): Cache identifiers for new unsaved accounts to make sure
   // the save method only saves accounts created from this class.
-  AKAccount *newAccount = [type accountWithIdentifier:[[NSUUID UUID] UUIDString]];
+  AKAccount *newAccount =
+      [self.accountTypeClass accountWithIdentifier:[[NSUUID UUID] UUIDString]];
   return newAccount;
 }
 
@@ -51,18 +55,15 @@
   return self.accounts[identifier];
 }
 
-- (void)saveAccount:(AKAccount *)account
-    withCompletionHandler:(void (^)())completionHandler {
-  self.accounts[account.identifier] = account;
-  completionHandler ? completionHandler() : NULL;
-}
-
-- (void)saveMasterAccount:(AKAccount *)account {
+- (void)saveAccount:(AKAccount *)account {
   self.masterAccount = account;
 }
 
-- (AKAccount *)authenticatedMasterAccount {
-  return self.masterAccount;
+- (AKAccount *)authenticatedAccount {
+  if ([self.masterAccount isAuthenticated]) {
+    return self.masterAccount;
+  }
+  return nil;
 }
 
 @end

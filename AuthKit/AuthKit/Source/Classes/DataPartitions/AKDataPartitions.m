@@ -42,12 +42,12 @@ NSString * const AKDataPartitionStoreURLKey = @"AKDataPartitionPersistentStoreUR
     return nil;
   }
   
-  account.userInfo[AKDataPartitionStoreURLKey] = [[store URL] absoluteString];
+//  account.userInfo[AKDataPartitionStoreURLKey] = [[store URL] absoluteString];
   return coordinator;
 }
 
 - (NSURL *)storeURLForAccount:(AKAccount *)account {
-  NSString *existingStoreURLString = account.userInfo[AKDataPartitionStoreURLKey];
+  NSString *existingStoreURLString = @""; // account.userInfo[AKDataPartitionStoreURLKey];
   if (!existingStoreURLString) {
     return [self newURLForNewStore];
   }

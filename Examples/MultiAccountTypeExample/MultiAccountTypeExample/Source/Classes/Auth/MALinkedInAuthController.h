@@ -1,5 +1,5 @@
-#import "AKAuthController.h"
+#import "AKGTMOAuth2AuthController.h"
 
-@interface MALinkedInAuthController : AKAuthController
+@interface MALinkedInAuthController : AKGTMOAuth2AuthController
 
 @end

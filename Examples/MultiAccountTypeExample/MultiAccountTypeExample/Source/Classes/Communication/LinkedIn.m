@@ -25,7 +25,7 @@ typedef void (^AFHTTPRequestOperationFailure)(AFHTTPRequestOperation *operation,
                                             NSError *error){
     NSLog(@"LinkedIn: ERROR, HTTP Error: %@, for operation, %@", error,requestOperation);
     [[MALinkedInAuthController sharedController]
-     unauthenticateAccount:[[AKAccountStore sharedStore] authenticatedMasterAccount]];
+     unauthenticateAccount:[[AKAccountStore sharedStore] authenticatedAccount]];
   };
   
   [httpClient getPath:path

@@ -45,7 +45,7 @@
 
 - (void)logout:(id)sender {
   [self.authControl
-   unauthenticateAccount:[[AKAccountStore sharedStore] authenticatedMasterAccount]];
+   unauthenticateAccount:[[AKAccountStore sharedStore] authenticatedAccount]];
 }
 
 - (void)loadUpdateProfileButton {

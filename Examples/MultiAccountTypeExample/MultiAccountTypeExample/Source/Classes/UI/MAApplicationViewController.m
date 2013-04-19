@@ -41,8 +41,8 @@
 
 #pragma mark AKAuthControl
 
-- (void)authenticate {
-  [self.masterAccountAuthController authenticate];
+- (void)beginAuthenticationAttempt {
+  [self.masterAccountAuthController beginAuthenticationAttempt];
 }
 
 - (void)unauthenticateAccount:(AKAccount *)account {
@@ -51,7 +51,7 @@
 
 #pragma mark AKAuthHandler
 
-- (void)presentViewController:(UIViewController *)viewController {
+- (void)presentAKLoginViewController:(UIViewController *)viewController {
   self.loginViewController = viewController;
   [self addChildViewController:viewController];
   [self.view addSubview:viewController.view];

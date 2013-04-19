@@ -13,4 +13,13 @@
   return _sharedController;
 }
 
+- (void)beginAuthenticationAttempt {
+  // Abstract.
+  NSLog(@"Hi");
+}
+
+- (void)unauthenticateAccount:(AKAccount *)account {
+ // Abstract.
+}
+
 @end

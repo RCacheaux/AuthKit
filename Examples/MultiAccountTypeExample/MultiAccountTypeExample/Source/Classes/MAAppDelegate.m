@@ -3,9 +3,11 @@
 #import "MAApplicationViewController.h"
 
 #import <AuthKit/AKAccount.h>
+#import <AuthKit/AKAccountStore.h>
 
 #import "MAGoogleAuthController.h"
 #import "MALinkedInAuthController.h"
+#import "AKGTMOAuth2Account.h"
 
 @implementation MAAppDelegate
 
@@ -16,6 +18,7 @@
 - (BOOL)application:(UIApplication *)application
     didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   MALinkedInAuthController *authController = [MALinkedInAuthController sharedController];
+  [[AKAccountStore sharedStore] registerAccountTypeClass:[AKGTMOAuth2Account class]];
   
   self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
   MAApplicationViewController *viewController =

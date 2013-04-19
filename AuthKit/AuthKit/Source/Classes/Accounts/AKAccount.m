@@ -4,6 +4,7 @@
 
 @interface AKAccount ()
 @property(nonatomic, copy, readwrite) NSString *identifier;
+
 @end
 
 @implementation AKAccount
@@ -12,15 +13,23 @@
   return [[self alloc] initWithIdentifier:identifier];
 }
 
-- (instancetype)initWithIdentifier:(NSString *)identifier {
+- (id)initWithIdentifier:(NSString *)identifier {
   self = [super init];
   if (self) {
     _identifier = identifier;
-    _userInfo = [NSMutableDictionary dictionary];
   }
   return self;
 }
 
-// TODO(rcacheaux): Invalidate default initializer.
+- (void)clearCredential {
+  // Abstract method.
+}
+
+- (BOOL)isAuthenticated {
+  return NO;
+}
 
 @end
+
+
+// TODO(rcacheaux): Invalidate default initializer.

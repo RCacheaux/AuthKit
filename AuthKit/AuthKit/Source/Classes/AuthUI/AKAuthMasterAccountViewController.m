@@ -43,7 +43,7 @@
 
 #pragma mark AKAuthHandler
 
-- (void)presentViewController:(UIViewController *)viewController {
+- (void)presentAKLoginViewController:(UIViewController *)viewController {
   // TODO(rcacheaux): Implement
 }
 
@@ -60,7 +60,7 @@
 #pragma mark AKAuthenticatableViewController
 
 - (void)authenticate {
-  [self.masterAccountAuthController authenticate];
+  [self.masterAccountAuthController beginAuthenticationAttempt];
 }
 
 - (void)unauthenticate {

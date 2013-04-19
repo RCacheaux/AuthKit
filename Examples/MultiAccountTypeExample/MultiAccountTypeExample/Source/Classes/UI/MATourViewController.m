@@ -30,7 +30,7 @@
 }
 
 - (void)logIn:(id)sender {
-  [self.authControl authenticate];
+  [self.authControl beginAuthenticationAttempt];
 }
 
 @end
